@@ -1,0 +1,19 @@
+_type: "prompt"
+template: |
+  #Instructions
+  Please expand the brief knowledge provided in {question} by following the guidelines below:
+  1. **Preserve Core Meaning**: Do not change the topic or main content of the original text. Accurately retain the key points intended by the brief knowledge.
+  2. **Add Detailed Information**: Enrich the original text by adding context, examples, and related concepts, providing deeper insight into the subject.
+  3. **Logical Organization**: Use paragraphs or bullet points to logically structure the expanded content, ensuring clarity and consistency.
+  4. **Accuracy First**: Provide correct and factual information without introducing errors.
+  5. **No Excessive Summarization**: Extend the original text to include more content and detail, aiming for a length that exceeds the initial brief knowledge.
+
+  #Knowledge
+  {question}
+
+  #Output
+  Using the above guidelines, please write a comprehensive and detailed expansion of the brief knowledge presented in {question}. Ensure that the enriched content remains faithful to the original meaning while adding substantial depth.
+  
+  ANSWER IN KOREAN
+
+input_variables: ["question"]
